@@ -32,7 +32,7 @@ public class ApplyServerImp {
                                   String receiverName,
                                   String applyCode)
     {
-        Bool success = applyMapper.intsertApply(userid,applyState,type,state,name,auditid,auditName,commitTime,beginTime,
+        boolean success = applyMapper.intsertApply(userid,applyState,type,state,name,auditid,auditName,commitTime,beginTime,
                  endTime,
             reason,
             interval,receiverid,receiverName,applyCode);
@@ -68,7 +68,7 @@ public class ApplyServerImp {
                                      String receiverName,
                                      String applyCode)
     {
-        Bool success = applyMapper.updateApply(userid,applyState,type,state,name,auditid,
+        boolean success = applyMapper.updateApply(userid,applyState,type,state,name,auditid,
                 auditName,commitTime,beginTime,endTime,reason,
                 interval,receiverid,receiverName,applyCode);
 

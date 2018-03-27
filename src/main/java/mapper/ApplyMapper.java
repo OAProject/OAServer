@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 public interface ApplyMapper {
 
-    public Bool intsertApply(@Param("userid") int userid,
+    public boolean intsertApply(@Param("userid") int userid,
                              @Param("applyState") String applyState,
                              @Param("type") String type,
                              @Param("state") String state,
@@ -24,7 +24,7 @@ public interface ApplyMapper {
                              @Param("applyCode") String applyCode);
 
 
-    public Bool updateApply(@Param("userid") int userid,
+    public boolean updateApply(@Param("userid") int userid,
                            @Param("applyState") String applyState,
                            @Param("type") String type,
                            @Param("state") String state,
