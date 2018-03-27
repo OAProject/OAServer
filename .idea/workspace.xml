@@ -13,6 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87392b93-f648-42d1-b1d0-cbfe87c0b9b8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/OAProject_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/OAProject_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/OAProject_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/OAProject_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,8 +73,8 @@
       <file leaf-file-name="OAProject.iml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OAProject.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            <state relative-caret-position="495">
+              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -484,9 +486,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="XML" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="Repository&#9;PSI&#9;JAVA://com.sun.org.apache.bcel.internal.util.Repository&#10;testmapper&#9;FILE&#9;file:///Users/wzk/Documents/Products/JavaProduct/Test/src/main/java/mapper/testmapper.xml" />
@@ -754,7 +756,7 @@
       <workItem from="1522134090899" duration="92000" />
       <workItem from="1522134185322" duration="1000" />
       <workItem from="1522134719529" duration="8000" />
-      <workItem from="1522134956182" duration="314000" />
+      <workItem from="1522134956182" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="addClassAndConfig">
       <created>1508230615796</created>
@@ -921,7 +923,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231979000" />
+    <option name="totallyTimeSpent" value="232161000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1352,8 +1354,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OAProject.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+        <state relative-caret-position="495">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding />
         </state>
       </provider>
