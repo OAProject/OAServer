@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87392b93-f648-42d1-b1d0-cbfe87c0b9b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OAProject.iml" afterPath="$PROJECT_DIR$/OAProject.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -755,7 +754,7 @@
       <workItem from="1522134090899" duration="92000" />
       <workItem from="1522134185322" duration="1000" />
       <workItem from="1522134719529" duration="8000" />
-      <workItem from="1522134956182" duration="276000" />
+      <workItem from="1522134956182" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="addClassAndConfig">
       <created>1508230615796</created>
@@ -904,11 +903,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522135090490</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="workspace and testPatch  change">
+      <created>1522135255780</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1522135255780</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231941000" />
+    <option name="totallyTimeSpent" value="231965000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1015,7 +1021,8 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="将业务逻辑整理入service中。" />
     <MESSAGE value="workspace change" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace change" />
+    <MESSAGE value="workspace and testPatch  change" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace and testPatch  change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
