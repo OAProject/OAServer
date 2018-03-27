@@ -754,7 +754,7 @@
       <workItem from="1522134090899" duration="92000" />
       <workItem from="1522134185322" duration="1000" />
       <workItem from="1522134719529" duration="8000" />
-      <workItem from="1522134956182" duration="300000" />
+      <workItem from="1522134956182" duration="314000" />
     </task>
     <task id="LOCAL-00001" summary="addClassAndConfig">
       <created>1508230615796</created>
@@ -910,11 +910,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522135255780</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="workspace  change two">
+      <created>1522135269889</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1522135269889</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231965000" />
+    <option name="totallyTimeSpent" value="231979000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1022,7 +1029,8 @@
     <MESSAGE value="将业务逻辑整理入service中。" />
     <MESSAGE value="workspace change" />
     <MESSAGE value="workspace and testPatch  change" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace and testPatch  change" />
+    <MESSAGE value="workspace  change two" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace  change two" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
