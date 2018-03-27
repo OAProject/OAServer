@@ -753,7 +753,7 @@
       <workItem from="1522134090899" duration="92000" />
       <workItem from="1522134185322" duration="1000" />
       <workItem from="1522134719529" duration="8000" />
-      <workItem from="1522134956182" duration="92000" />
+      <workItem from="1522134956182" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="addClassAndConfig">
       <created>1508230615796</created>
@@ -888,11 +888,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522132031017</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="将业务逻辑整理入service中。">
+      <created>1522135058569</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1522135058569</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231757000" />
+    <option name="totallyTimeSpent" value="231771000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
