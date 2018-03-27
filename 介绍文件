@@ -1,0 +1,18 @@
+pom.xml ：配置meven第三方框架包。
+controller：控制层。
+
+mapper：数据层，注意：接口名必须和mapper下namespace一致，方法名必须和mapper下的id一致。
+service：业务逻辑层。
+        用到的注解：
+        @Service：加入到业务层容器中。
+        @Autowired：当Spring发现。
+        @Autowired注解时，将自动在代码上下文中找到和其匹配（默认是类型匹配）的Bean，并自动注入到相应的地方去。
+        @Autowired注解时，属性会自动创建对象的。
+
+        @Resource 和 @Autowired用法相似，但是@Autowired是Spring的，@Resource是J2EE的。
+
+        @Controller：自动加入控制层。
+
+
+
+
