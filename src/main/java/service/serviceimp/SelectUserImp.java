@@ -24,6 +24,21 @@ public class SelectUserImp implements SelectUser {
     //  登录接口
     public Map<String, Object> selectForDoLogin(String name, String pwd) {
         Map<String,Object> map = new HashMap<String, Object>();
+
+        if (pwd == "" || pwd == null)
+        {
+            map.put(ControllerConfig.code, 0);
+            map.put(ControllerConfig.mas, "密码不正确");
+            return map;
+        }
+        if (name == "" || name == null)
+        {
+            map.put(ControllerConfig.code, 0);
+            map.put(ControllerConfig.mas, "用户名为空");
+            return map;
+        }
+
+
         List<UserInfo> listModelName = selectUser(name);
         if (listModelName.size() < 1)
         {
