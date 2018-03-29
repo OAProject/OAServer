@@ -84,7 +84,7 @@ public class SelectUserImp implements SelectUser {
         List<UserInfo> listModelName = selectUser(name);
         if (listModelName.size() <= 1)
         {
-           Bool type = testmap.insertUser(name,pwd,sex,age,idCard,staffNum,phone,department,post,headImagePatch,
+           boolean type = testmap.insertUser(name,pwd,sex,age,idCard,staffNum,phone,department,post,headImagePatch,
                 telephone,mail,
                     bossName,bossid);
             map.put(ControllerConfig.code, type);
@@ -100,5 +100,37 @@ public class SelectUserImp implements SelectUser {
         }
 
     }
+
+    public Map<String,Object> updateUser(int id,
+                                         String name,
+                                         String pwd,
+                                         String sex,
+                                         String age,
+                                         String idCard,
+                                         String staffNum,
+                                         String phone,
+                                         String department,
+                                         String post,
+                                         String headImagePatch,
+                                         String telephone,
+                                         String mail,
+                                         String bossName,
+                                         int bossid)
+    {
+        Map<String,Object> map = new HashMap<String,Object>();
+        boolean type = testmap.updateUser(id,name,pwd,sex,age,idCard,staffNum,phone,department,post,headImagePatch,
+                telephone,mail,
+                bossName,bossid);
+        if (type){
+            map.put(ControllerConfig.code,"200");
+            map.put(ControllerConfig.mas,"修改成功");
+        }
+        else {
+            map.put(ControllerConfig.code,"400");
+            map.put(ControllerConfig.mas,"修改失败");
+        }
+        return map;
+    }
+
 
 }

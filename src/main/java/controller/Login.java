@@ -72,4 +72,35 @@ public class Login {
     }
 
 
+    /*
+    修改用户信息
+     */
+    @RequestMapping(value = "/updateUser",method = {RequestMethod.GET,RequestMethod.POST})
+    @ResponseBody
+    public Map<String,Object> updateUserInfo(@RequestParam Map<String,Object> mapRes)
+    {
+
+        int bossid = Integer.parseInt(mapRes.get(ControllerConfig.bossid).toString());
+        int userid = Integer.parseInt(mapRes.get(ControllerConfig.id).toString());
+        Map<String, Object> map_ = selectuserimp.updateUser(
+                userid,
+                mapRes.get(ControllerConfig.name).toString(),
+                mapRes.get
+                        (ControllerConfig.password).toString(),
+                mapRes.get(ControllerConfig.sex).toString(),
+                mapRes.get(ControllerConfig.age).toString(),
+                mapRes.get(ControllerConfig.idcard).toString(),
+                mapRes.get(ControllerConfig.staffNum).toString(),
+                mapRes.get(ControllerConfig.phone).toString(),
+                mapRes.get(ControllerConfig.department).toString(),
+                mapRes.get(ControllerConfig.post).toString(),
+                mapRes.get(ControllerConfig.headImagePatch).toString(),
+                mapRes.get(ControllerConfig.telephone).toString(),
+                mapRes.get(ControllerConfig.mail).toString(),
+                mapRes.get(ControllerConfig.bossName).toString(),
+                bossid
+        );
+        return map_;
+    }
+
 }
