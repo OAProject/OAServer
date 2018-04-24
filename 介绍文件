@@ -124,10 +124,40 @@ mybatis
 
     Mybatis开发Dao
 
-    原始dao开发方法（需要写dao接口和dao实现类）
-        思路：
-        需要写dao接口和dao实现类，
-        需要向dao实现类中
+
+SqlMapConfig.xml（工程中的spring.xml文件）的配置内容和顺序如下（顺序不能乱）：
+
+Properties（属性）
+
+Settings（全局参数设置）：在运行时，可以调整运行的参数，比如：开启二级缓存，开启延迟加载。。。
+
+typeAliases（类型别名-重点）：分为默认别名和自定义别名。
+单个别名的定义：<typeAliases type="路径" alias="别名名称"></typeAliases>
+引用别名：直接拿着别名名称使用。
+批量别名的定义： <typeAliases>  <package name="model" /> </typeAliases>会自动扫描包中的po类，自动的创建定义别名，
+别名就是类名，首字母大写或者小写。
+
+
+typeHandlers（类型处理器）：在mybitas中通过typeHandlers完成jdbc类型和java类型转换。
+通常情况下，mybatis提供的类型处理器满足日常需要，不需要自定义。
+
+objectFactory（对象工厂）
+
+plugins（插件）
+
+environments（环境信息集合）
+
+environment（单个环境信息）
+
+transactionManager（事物）
+
+dataSource（数据源）
+
+mappers（映射器配置-重点）
+
+
+
+configLocation、mapperLocations
 
 
 

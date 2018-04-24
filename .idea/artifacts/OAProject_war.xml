@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="OAProject:war">
-    <output-path>$USER_HOME$/target</output-path>
+    <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="test.war">
       <element id="artifact" artifact-name="OAProject:war exploded" />
     </root>
