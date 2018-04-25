@@ -12,7 +12,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/service/serviceimp/ApplyServerImp.java" description="public void insertApplyServer(int userid," line="18" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87392b93-f648-42d1-b1d0-cbfe87c0b9b8" name="Default" comment="workspace  change two">
+    <list default="true" id="87392b93-f648-42d1-b1d0-cbfe87c0b9b8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,8 +60,8 @@
       <file leaf-file-name="介绍文件" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/介绍文件">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="164" column="3" lean-forward="true" selection-start-line="164" selection-start-column="3" selection-end-line="164" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -712,7 +712,7 @@
       <workItem from="1524475966973" duration="853000" />
       <workItem from="1524538791153" duration="5151000" />
       <workItem from="1524674498220" duration="939000" />
-      <workItem from="1524676298659" duration="593000" />
+      <workItem from="1524676298659" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="addClassAndConfig">
       <created>1508230615796</created>
@@ -889,11 +889,18 @@
       <option name="project" value="LOCAL" />
       <updated>1524676667187</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="workspace  change two">
+      <created>1524676936554</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1524676936554</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259184000" />
+    <option name="totallyTimeSpent" value="259381000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1272,8 +1279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/介绍文件">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+        <state relative-caret-position="326">
+          <caret line="164" column="3" lean-forward="true" selection-start-line="164" selection-start-column="3" selection-end-line="164" selection-end-column="3" />
           <folding />
         </state>
       </provider>
