@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="mapper.UserMapper">
+
+    <select id="selectUserMapper" resultType="model.UserInfo">
+    select * from oa_users
+    </select>
+
+
+    <!--<select id="selectusermapper" resultType="UserInfo"> SELECT * FROM user WHERE </select>-->
+
+    <select id="selectUserMapperForLogin" resultType="model.UserInfo" parameterType="Map">
+        SELECT * FROM oa_users
+    <where>
+        <if test="name != null and name != ''">
+            user_name = #{name}
+        </if>
+
+        <if test="pwd != null and pwd != ''">
+            AND user_password = #{pwd}
+        </if>
+    </where>
+    </select>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
+        <selectKey resultType="java.lang.Integer" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID() AS id
+        </selectKey>
+         INSERT INTO  `user`
+         (
+         `name`,pwd,age,sex,idCard,staffNum,phone,department,
+         post,headImagePatch,telephone,mail,bossName,bossid
+         )
+         VALUES
+         (
+         #{name},#{pwd},#{age},#{sex},#{idCard},#{staffNum},#{phone},#{department},
+         #{post},#{headImagePatch},#{telephone},#{mail},#{bossName},#{bossid}
+         );
+    </insert>
+
+    <update id="updateUser">
+        UPDATE `user` <set>
+        <if test="name != null">
+            `name` = #{name},
+        </if>
+        <if test="pwd != null">
+            pwd = #{pwd},
+        </if>
+        <if test="age != null">
+            age = #{age},
+        </if>
+        <if test="sex != null">
+            sex = #{sex},
+        </if>
+        <if test="idCard != null">
+            idCard = #{idCard},
+        </if>
+
+        <if test="staffNum != null">
+            staffNum = #{staffNum},
+        </if>
+        <if test="phone != null">
+            phone = #{phone},
+        </if>
+        <if test="department != null">
+            department = #{department},
+        </if>
+        <if test="post != null">
+            post = #{post},
+        </if>
+        <if test="headImagePatch != null">
+            headImagePatch = #{headImagePatch},
+        </if>
+        <if test="telephone != null">
+            telephone = #{telephone},
+        </if>
+        <if test="mail != null">
+            mail = #{mail},
+        </if>
+        <if test="bossName != null">
+            bossName = #{bossName},
+        </if>
+       <if test="bossid != 0">
+           bossid = #{bossid}
+       </if>
+
+
+    </set>
+        <where>
+
+            <if test="id != null">
+                id = #{id}
+            </if>
+
+        </where>
+    </update>
+
+
+</mapper>
+

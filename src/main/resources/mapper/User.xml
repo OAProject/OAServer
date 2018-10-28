@@ -4,27 +4,22 @@
 
 <mapper namespace="mapper.UserMapper">
 
-    <select id="selectUserMapper" resultType="UserInfo">
-    SELECT * FROM `user`
-    <where>
-        <if test="name != null and name != ''">
-            name = #{name}
-        </if>
-    </where>
+    <select id="selectUserMapper" resultType="model.UserInfo">
+    select * from oa_users
     </select>
 
 
     <!--<select id="selectusermapper" resultType="UserInfo"> SELECT * FROM user WHERE </select>-->
 
-    <select id="selectUserMapperForLogin" resultType="UserInfo" parameterType="String">
-        SELECT * FROM `user`
+    <select id="selectUserMapperForLogin" resultType="model.UserInfo" parameterType="Map">
+        SELECT * FROM oa_users
     <where>
         <if test="name != null and name != ''">
-            `name` = #{name}
+            user_name = #{name}
         </if>
 
         <if test="pwd != null and pwd != ''">
-            AND pwd = #{pwd}
+            AND user_password = #{pwd}
         </if>
     </where>
     </select>

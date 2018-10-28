@@ -2,146 +2,168 @@ package model;
 
 public class UserInfo {
 
-    private  Integer id;
-    private  String name;
-    private  String pwd;
-    private  Integer age;
-    private  char sex;
-    private  String idCard;
-    private  String staffNum;
-    private  String phone;
-    private  String department;
-    private  String post;
-    private  String headImagePatch;
-    private  String telephone;
-    private  String mail;
-    private  String bossName;
-    private  String bossid;
+    private  int id;
+    private  String user_name;
+    private  String user_idcard;
+    private  int user_sex;
+    private  int user_workage;
+    private  int user_age;
+    private  String user_censusregister;
+    private  String user_liveroom;
+    private  int user_residence;
+    private  String user_tel;
+    private  String user_phoneNumber;
+    private  int user_department;
+    private  int user_position;
+    private  String user_birth;
+    private  String user_contactperson;
+    private  String contactperson_tel;
+    private  String contactparson_position;
+    private  String user_password;
 
-
-
-
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public String getPwd() {
-        return pwd;
+    public String getUser_idcard() {
+        return user_idcard;
     }
 
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
+    public void setUser_idcard(String user_idcard) {
+        this.user_idcard = user_idcard;
     }
 
-    public Integer getAge() {
-        return age;
+    public int getUser_sex() {
+        return user_sex;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void setUser_sex(int user_sex) {
+        this.user_sex = user_sex;
     }
 
-    public char getSex() {
-        return sex;
+    public int getUser_workage() {
+        return user_workage;
     }
 
-    public void setSex(char sex) {
-        this.sex = sex;
+    public void setUser_workage(int user_workage) {
+        this.user_workage = user_workage;
     }
 
-    public String getIdCard() {
-        return idCard;
+    public int getUser_age() {
+        return user_age;
     }
 
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
+    public void setUser_age(int user_age) {
+        this.user_age = user_age;
     }
 
-    public String getStaffNum() {
-        return staffNum;
+    public String getUser_censusregister() {
+        return user_censusregister;
     }
 
-    public void setStaffNum(String staffNum) {
-        this.staffNum = staffNum;
+    public void setUser_censusregister(String user_censusregister) {
+        this.user_censusregister = user_censusregister;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getUser_liveroom() {
+        return user_liveroom;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setUser_liveroom(String user_liveroom) {
+        this.user_liveroom = user_liveroom;
     }
 
-    public String getDepartment() {
-        return department;
+    public int getUser_residence() {
+        return user_residence;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setUser_residence(int user_residence) {
+        this.user_residence = user_residence;
     }
 
-    public String getPost() {
-        return post;
+    public String getUser_tel() {
+        return user_tel;
     }
 
-    public void setPost(String post) {
-        this.post = post;
+    public void setUser_tel(String user_tel) {
+        this.user_tel = user_tel;
     }
 
-    public String getHeadImagePatch() {
-        return headImagePatch;
+    public String getUser_phoneNumber() {
+        return user_phoneNumber;
     }
 
-    public void setHeadImagePatch(String headImagePatch) {
-        this.headImagePatch = headImagePatch;
+    public void setUser_phoneNumber(String user_phoneNumber) {
+        this.user_phoneNumber = user_phoneNumber;
     }
 
-    public String getTelephone() {
-        return telephone;
+    public int getUser_department() {
+        return user_department;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setUser_department(int user_department) {
+        this.user_department = user_department;
     }
 
-    public String getMail() {
-        return mail;
+    public int getUser_position() {
+        return user_position;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
+    public void setUser_position(int user_position) {
+        this.user_position = user_position;
     }
 
-    public String getBossName() {
-        return bossName;
+    public String getUser_birth() {
+        return user_birth;
     }
 
-    public void setBossName(String bossName) {
-        this.bossName = bossName;
+    public void setUser_birth(String user_birth) {
+        this.user_birth = user_birth;
     }
 
-    public String getBossid() {
-        return bossid;
+    public String getUser_contactperson() {
+        return user_contactperson;
     }
 
-    public void setBossid(String bossid) {
-        this.bossid = bossid;
+    public void setUser_contactperson(String user_contactperson) {
+        this.user_contactperson = user_contactperson;
     }
 
+    public String getContactperson_tel() {
+        return contactperson_tel;
+    }
 
+    public void setContactperson_tel(String contactperson_tel) {
+        this.contactperson_tel = contactperson_tel;
+    }
+
+    public String getContactparson_position() {
+        return contactparson_position;
+    }
+
+    public void setContactparson_position(String contactparson_position) {
+        this.contactparson_position = contactparson_position;
+    }
+
+    public String getUser_password() {
+        return user_password;
+    }
+
+    public void setUser_password(String user_password) {
+        this.user_password = user_password;
+    }
 
 
 }

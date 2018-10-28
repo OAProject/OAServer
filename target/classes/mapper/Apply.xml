@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+
+<mapper namespace="mapper.ApplyMapper">
+
+    <insert id="intsertApply">
+    INSERT INTO apply
+    (userid,applyState,`type`,state,`name`,auditid,
+    auditName,commitTime,beginTime,endTime,reason,
+    `interval`,receiverid,receiverName,applyCode)
+    VALUES
+    (#{userid},#{applyState},#{type},#{state},#{name},#{auditid},
+    #{auditName},#{commitTime},#{beginTime},#{endTime},#{reason},
+    #{interval},#{receiverid},#{receiverName},#{applyCode})
+    </insert>
+
+
+    <update id="updateApply">
+
+        UPDATE apply
+        <set>
+            <if test="applyState != null">
+                applyState=#{applyState},
+            </if>
+            <if test="type != null">
+                `type`=#{type},
+            </if>
+            <if test="state != null">
+                state=#{state},
+            </if>
+            <if test="name != null">
+                `name`=#{name},
+            </if>
+            <if test="auditid != null">
+                auditid=#{auditid},
+            </if>
+            <if test="auditName != null">
+                auditName=#{auditName},
+            </if>
+            <if test="commitTime != null">
+                commitTime=#{commitTime},
+            </if>
+            <if test="beginTime != null">
+                beginTime=#{beginTime},
+            </if>
+            <if test="endTime != null">
+                endTime=#{endTime},
+            </if>
+            <if test="reason != null">
+                reason=#{reason},
+            </if>
+            <if test="interval != null">
+                `interval`=#{interval},
+            </if>
+            <if test="receiverid != null">
+                receiverid=#{receiverid},
+            </if>
+            <if test="receiverName != null">
+                receiverName=#{receiverName}
+            </if>
+
+        </set>
+        <where>
+
+            <if test="userid != null">
+                userid=#{userid}
+            </if>
+            <if test="applyCode != null">
+                AND applyCode=#{applyCode}
+            </if>
+
+        </where>
+
+    </update>
+    
+    
+    <select id="selectApply" resultType="ApplyModel">
+        SELECT * FROM apply 
+        <where>
+            <if test="userid != 0">
+                userid=#{userid}
+            </if>
+            <if test="applyState != null and applyState != ''">
+                AND applyState=#{applyState}
+            </if>
+            <if test="state != null and state != ''">
+                AND state=#{state}
+            </if>
+
+            <if test="auditid != 0">
+                AND auditid=#{auditid}
+            </if>
+            <if test="commitTime != null and commitTime != ''">
+                AND commitTime=#{commitTime}
+            </if>
+            <if test="beginTime != null and beginTime != ''">
+                AND beginTime=#{beginTime}
+            </if>
+            <if test="endTime != null and endTime != ''">
+                AND endTime=#{endTime}
+            </if>
+            <if test="receiverid != 0">
+                AND receiverid=#{receiverid}
+            </if>
+            <if test="applyCode != null and applyCode != ''">
+                AND applyCode=#{applyCode}
+            </if>
+
+        </where>
+    </select>
+</mapper>

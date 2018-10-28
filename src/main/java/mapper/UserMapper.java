@@ -8,9 +8,9 @@ import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
 
-public List<UserInfo> selectUserMapper(@Param("name") String name);
+public List<UserInfo> selectUserMapper();
 
-public List<UserInfo> selectUserMapperForLogin(@Param("name") String name,@Param("pwd") String pwd);
+public List<UserInfo> selectUserMapperForLogin(Map<String,Object> map);
 
 public boolean insertUser(@Param("name") String name,
                        @Param("pwd") String pwd,

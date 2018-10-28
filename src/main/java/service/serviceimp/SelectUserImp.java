@@ -19,12 +19,12 @@ public class SelectUserImp implements SelectUser {
     //    检测用户是否存在
     public List<UserInfo>selectUser(String name)
     {
-        return testmap.selectUserMapper(name);
+        return testmap.selectUserMapper();
     }
     //  登录接口
-    public Map<String, Object> selectForDoLogin(String name, String pwd) {
-        Map<String,Object> map = new HashMap<String, Object>();
-
+    public Map<String, Object> selectForDoLogin(Map<String,Object> map) {
+        String pwd = map.get("pwd").toString();
+        String name = map.get("name").toString();
         if (pwd == "" || pwd == null)
         {
             map.put(ControllerConfig.code, 0);
@@ -47,21 +47,23 @@ public class SelectUserImp implements SelectUser {
             return map;
 
         }
-        List<UserInfo> listmodel = testmap.selectUserMapperForLogin(name,pwd);
-        if (listmodel.size() >= 1)
-        {
-            UserInfo userinfo = listmodel.get(0);
-            map.put(ControllerConfig.code, 1);
-            map.put(ControllerConfig.mas, "登录成功");
-            map.put(ControllerConfig.data, userinfo);
-            return map;
-        }
-        else
-        {
-            map.put(ControllerConfig.code, "0");
-            map.put(ControllerConfig.mas, "密码错误");
-            return map;
-        }
+        return map;
+
+//        List<UserInfo> listmodel = testmap.selectUserMapperForLogin(map);
+//        if (listmodel.size() >= 1)
+//        {
+//            UserInfo userinfo = listmodel.get(0);
+//            map.put(ControllerConfig.code, 1);
+//            map.put(ControllerConfig.mas, "登录成功");
+//            map.put(ControllerConfig.data, userinfo);
+//            return map;
+//        }
+//        else
+//        {
+//            map.put(ControllerConfig.code, "0");
+//            map.put(ControllerConfig.mas, "密码错误");
+//            return map;
+//        }
 
     }
     //  注册接口

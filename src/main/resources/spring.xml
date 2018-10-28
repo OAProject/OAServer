@@ -33,6 +33,8 @@ http://www.springframework.org/schema/util/spring-util.xsd">
         <property name="username" value="${jdbc.username}"></property>
         <property name="password" value="${jdbc.password}"></property>
     </bean>
+
+
     <!-- 配置sqlsessionFactorybean -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 加载数据源的相关信息 -->

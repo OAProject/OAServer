@@ -34,9 +34,7 @@ public class Login {
     @ResponseBody//使用这个注解可以让接口在app端访问，而不是在网页中访问
     public Map<String, Object> getLoginUser(@RequestParam Map<String,Object> mapApply) {
 
-        String userName = mapApply.get(ControllerConfig.name).toString();
-        String password = mapApply.get(ControllerConfig.password).toString();
-        Map<String, Object> map = selectuserimp.selectForDoLogin(userName, password);
+        Map<String, Object> map = selectuserimp.selectForDoLogin(mapApply);
         return map; //封装为json返回给客户端
 
     }

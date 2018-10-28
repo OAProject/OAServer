@@ -6,7 +6,7 @@ import model.UserInfo;
 
 public interface SelectUser {
     public List<UserInfo>selectUser(String name);
-    public Map<String, Object> selectForDoLogin(String name, String pwd);
+    public Map<String, Object> selectForDoLogin(Map<String,Object> map);
 
     public Map<String, Object> insertUserForRegist(String name,
                                                    String pwd,

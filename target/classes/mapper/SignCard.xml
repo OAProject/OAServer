@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="mapper.SignCardMapper">
+
+    <insert id="insertCardRecord">
+
+        INSERT INTO  db_test.` timecard` (userid, years,months,days,`time`,state,limits,location,signType) VALUES
+        (#{userid},
+        #{years},#{months},#{days},#{time},#{state},#{limits},#{location},#{signType});
+    </insert>
+
+
+</mapper>
